@@ -6,7 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js",
-     "start": "node src/index.js"
+    "start": "node src/index.js",
+    "prisma:generate": "prisma generate"
+  },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
