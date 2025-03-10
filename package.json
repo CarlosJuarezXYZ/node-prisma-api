@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "prisma:generate": "prisma generate"
+    "postinstall": "npx prisma generate && pnpm install --force"
   },
   "prisma": {
     "schema": "prisma/schema.prisma"
