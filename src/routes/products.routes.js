@@ -12,6 +12,7 @@ router.get("/products", async (req, res) => {
 		});
 		res.json(products);
 	} catch (error) {
+		console.error("Database error:", error);
 		next(error);
 	}
 });
